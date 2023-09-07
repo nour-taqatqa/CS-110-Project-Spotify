@@ -1,0 +1,1322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>spotify API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>spotify</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">try:
+    import utilities
+    utilities.modify_system_path()
+except:
+    pass
+
+import requests
+from apis import authentication
+
+__all__ = [
+    &#39;_issue_get_request&#39;, &#39;_simplify_artists&#39;, &#39;_simplify_playlists&#39;, 
+    &#39;_simplify_tracks&#39;, &#39;authentication&#39;, &#39;get_album_player_html&#39;, 
+    &#39;get_artists&#39;, &#39;get_audio_features_by_track&#39;, &#39;get_formatted_tracklist_table&#39;, 
+    &#39;get_formatted_tracklist_table_html&#39;, 
+    &#39;get_genres&#39;, &#39;get_genres_abridged&#39;, 
+    &#39;get_playlist_player_html&#39;, &#39;get_playlists&#39;, 
+    &#39;get_playlists_by_user&#39;, &#39;get_related_artists&#39;, 
+    &#39;get_similar_tracks&#39;, &#39;get_top_tracks_by_artist&#39;, 
+    &#39;get_track_player_html&#39;, &#39;get_tracks&#39;, &#39;get_tracks_by_playlist&#39;
+]
+
+def get_genres():
+    &#39;&#39;&#39;
+    Queries Spotify for a list of available genres.  
+    Returns a list of strings representing the genres.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/recommendations/available-genre-seeds&#39;
+    data = _issue_get_request(url)
+    return data[&#39;genres&#39;]
+
+def get_genres_abridged():
+    &#39;&#39;&#39;
+    Returns a short, hard-coded list of genres (strings). Note that all of the strings in the list must be valid Spotify genreas.
+    &#39;&#39;&#39;
+    return [
+        &#34;alternative&#34;, &#34;ambient&#34;, &#34;blues&#34;, 
+        &#34;chill&#34;, &#34;country&#34;, &#34;dance&#34;, &#34;electronic&#34;, &#34;folk&#34;, 
+        &#34;funk&#34;, &#34;happy&#34;, &#34;hip-hop&#34;, &#34;indie-pop&#34;, &#34;jazz&#34;, &#34;k-pop&#34;, &#34;metal&#34;, 
+        &#34;new-release&#34;, &#34;pop&#34;, &#34;punk&#34;, &#34;reggae&#34;, &#34;rock&#34;,
+        &#34;soul&#34;, &#34;study&#34;, &#34;trance&#34;, &#34;work-out&#34;, &#34;world-music&#34;
+    ]
+
+def get_tracks(search_term:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of Spotify tracks, given the search term passed in.
+
+    * search_term (str): [Required] A search term (for a song), represented as a string.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of tracks.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/search?q=&#39; + search_term + &#39;&amp;type=track&#39;
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_tracks(data[&#39;tracks&#39;][&#39;items&#39;])
+
+def get_top_tracks_by_artist(artist_id:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of Spotify &#34;top tracks&#34; by an artist
+
+    * artist_id (str): [Required] The Spotify id of the artist.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of tracks.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/artists/&#39; + artist_id + &#39;/top-tracks?country=us&#39;
+    # print(url)
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_tracks(data[&#39;tracks&#39;])
+
+def get_tracks_by_playlist(playlist_id:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of the tracks associated with a playlist_id
+
+    * playlist_id (str): [Required] The id of the Spotify playlist.  
+    * simplify (bool):   Whether you want to simplify the data that is returned.  
+    
+    Returns a list of tracks.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/playlists/&#39; + playlist_id + &#39;/tracks&#39;
+    # print(url)
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    
+    def get_track(item):
+        return item[&#39;track&#39;]
+    tracks = list(map(get_track, data[&#39;items&#39;]))
+    return _simplify_tracks(tracks)
+
+def get_related_artists(artist_id:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of artists who are &#34;related&#34; to the artist you specify (according to Spotify).
+
+    * artist_id (str): [Required] The Spotify id of the artist, represented as a string.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of artists.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/artists/&#39; + artist_id + &#39;/related-artists&#39;
+    # print(url)
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_artists(data[&#39;artists&#39;])
+
+def get_artists(search_term:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of Spotify artists, given the search term passed in.  
+
+    * search_term (str): [Required] A search term (for an artist), represented as a string.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of artists.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/search?q=&#39; + search_term + &#39;&amp;type=artist&#39;
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_artists(data[&#39;artists&#39;][&#39;items&#39;])
+
+def get_playlists(search_term:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of Spotify playlists, given the search term passed in.
+
+    * search_term (str): [Required] A search term (for a song), represented as a string.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of playlists.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/search?q=&#39; + search_term + &#39;&amp;type=playlist&#39;
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_playlists(data[&#39;playlists&#39;][&#39;items&#39;])
+
+def get_playlists_by_user(user_id:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of Spotify playlists belonging to a particular user.
+
+    * user_id (str): [Required] A valid Spotify user id, represented as a string.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of playlists belonging to the user.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/users/&#39; + user_id + &#39;/playlists&#39;
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_playlists(data[&#39;items&#39;])
+
+def get_audio_features_by_track(track_id:str):
+    &#39;&#39;&#39;
+    Retrieves Spotify&#39;s audio analysis of the track.
+
+    * track_id (str): [Required] The id of the Spotify track.  
+    
+    Returns a list of audio features.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/audio-features/&#39; + track_id
+    return _issue_get_request(url)
+
+def get_similar_tracks(artist_ids:list=[], track_ids:list=[], genres:list=[], simplify:bool=True): 
+    &#39;&#39;&#39;
+    Spotify&#39;s way of providing recommendations. One or more params is required: 
+    artist_ids, track_ids, or genres. Up to 5 seed values may be provided in 
+    any combination of seed_artists, seed_tracks and seed_genres. In other words:
+    len(artist_ids) + len(track_ids) + len(genres) between 1 and 5.  
+
+    * artist_ids (list): A list of artist ids (list of strings).  
+        * Example: `[ &#39;06HL4z0CvFAxyc27GXpf02&#39;, &#39;3Nrfpe0tUJi4K4DXYWgMUX&#39; ]`
+    * track_ids (list): A list of track ids 
+        * Example: `[ &#39;5ZBeML7Lf3FMEVviTyvi8l&#39;, &#39;29U7stRjqHU6rMiS8BfaI9&#39; ]` 
+    * genres (genres): A list of genres  
+        * Example: `[ &#39;chill&#39; ]`
+
+    Returns a list of tracks that are similar
+    &#39;&#39;&#39;
+    if not artist_ids and not track_ids and not genres:
+        raise Exception(&#39;Either artist_ids or track_ids or genres required&#39;)
+    
+    # check if seeds &lt;= 5:
+    artist_ids = artist_ids or []
+    track_ids = track_ids or []
+    genres = genres or []
+    if len(artist_ids) + len(track_ids) + len(genres) &gt; 5:
+        error = &#39;You can only have 5 &#34;seed values&#34; in your recommendations query.\n&#39; + \
+            &#39;In other words, (len(artist_ids) + len(track_ids) + len(genres)) must be less than or equal to 5.&#39;
+        raise Exception(error)
+    
+    params = []
+    if artist_ids:
+        params.append(&#39;seed_artists=&#39; + &#39;,&#39;.join(artist_ids))
+    if track_ids:
+        params.append(&#39;seed_tracks=&#39; + &#39;,&#39;.join(track_ids))
+    if genres:
+        params.append(&#39;seed_genres=&#39; + &#39;,&#39;.join(genres))
+    
+    url = &#39;https://api.spotify.com/v1/recommendations?&#39; + &#39;&amp;&#39;.join(params)
+    print(url)
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+
+    return _simplify_tracks(data[&#39;tracks&#39;])
+
+
+#############################
+# Some formatting utilities #
+#############################
+
+def get_track_player_html(track_id:int):
+    &#39;&#39;&#39;
+    Creates the HTML tags for a Spotify player.
+
+    * track_id (int): [Required] The id of a track.  
+    
+    Returns an HTML iFrame  (str) corresponding to a Spotify player for the track. 
+    &#39;&#39;&#39;
+    return &#39;&#39;&#39;
+    &lt;iframe src=&#34;https://open.spotify.com/embed?uri=spotify:track:{track_id}&amp;amp;theme=white&#34; width=&#34;300&#34; height=&#34;80&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34; data-testid=&#34;audio-player&#34;&gt;
+    &lt;/iframe&gt;
+    &#39;&#39;&#39;.format(track_id=track_id)
+
+def get_playlist_player_html(playlist_id:int, width:int=400, height:int=280):
+    &#39;&#39;&#39;
+    Generates an Spotify playlist player.  
+
+    * playlist_id (int): [Required] The Spotify playlist id.  
+    * width (int): The width of the player.  
+    * height (int): The height of the player.
+
+    Returns a string representation of an HTML iframe corresponding to the playlist.
+    &#39;&#39;&#39;
+    return &#39;&#39;&#39;
+    &lt;iframe src=&#34;https://open.spotify.com/embed/playlist/{playlist_id}&#34; 
+        width=&#34;{width}&#34; height=&#34;{height}&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; 
+        allow=&#34;encrypted-media&#34;&gt;
+    &lt;/iframe&gt;&#39;&#39;&#39;.format(playlist_id=playlist_id, width=width, height=height)
+
+def get_album_player_html(album_id:int, width:int=300, height:int=380):
+    &#39;&#39;&#39;
+    Generates an Spotify album player.  
+
+    * album_id (int): [Required] The Spotify album id.  
+    * width (int): The width of the player.  
+    * height (int): The height of the player.
+
+    Returns a string representation of an HTML iframe corresponding to the album.
+    &#39;&#39;&#39;
+    return &#39;&#39;&#39;
+    &lt;iframe src=&#34;https://open.spotify.com/embed/album/{album_id}&#34; 
+        width=&#34;{width}&#34; height=&#34;{height}&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; 
+        allow=&#34;encrypted-media&#34;&gt;
+    &lt;/iframe&gt;&#39;&#39;&#39;.format(album_id=album_id, width=width, height=height)
+
+def get_formatted_tracklist_table(tracks:list):
+    &#39;&#39;&#39;
+    Function that builds a string representation of the tracks.
+
+    * tracks (list): [Required] List of tracks.  
+
+    Returns a table as a string (that can subsequently be printed to the screen).
+    &#39;&#39;&#39;
+    line_width = 95
+    text = &#39;&#39;
+    template = &#39;{0:2} | {1:&lt;22.22} | {2:&lt;30.30} | {3:&lt;30.30}\n&#39;
+    
+    # header section:
+    text += &#39;-&#39; * line_width + &#39;\n&#39;
+    text += template.format(
+        &#39;&#39;, &#39;Name&#39;, &#39;Artist&#39;, &#39;Album&#39;
+    )
+    text += &#39;-&#39; * line_width + &#39;\n&#39;
+
+    # data section:
+    counter = 1
+    for track in tracks:
+        text += template.format(
+            counter,
+            track.get(&#39;name&#39;), 
+            track.get(&#39;artist&#39;).get(&#39;name&#39;),
+            track.get(&#39;album&#39;).get(&#39;name&#39;)
+        )
+        counter += 1
+    text += &#39;-&#39; * line_width + &#39;\n&#39;
+    return text
+    
+
+def get_formatted_tracklist_table_html(tracks:list):
+    &#39;&#39;&#39;
+    Makes a nice formatted HTML table of tracks. Good for writing to an 
+    HTML file or for sending in an email.
+
+    * tracks(list): [Required] A list of tracks.  
+
+    Returns an HTML table as a string 
+    &#39;&#39;&#39;
+    if not tracks:
+        print(&#39;A list of tracks is required.&#39;)
+        return
+
+    template = &#39;&#39;&#39;
+        &lt;tr&gt;
+            &lt;td {css}&gt;{name}&lt;/td&gt;
+            &lt;td {css}&gt;&lt;img src=&#34;{image_url}&#34; /&gt;&lt;/td&gt;
+            &lt;td {css}&gt;{artist_name}&lt;/td&gt;
+            &lt;td {css}&gt;{album_name}&lt;/td&gt;
+            &lt;td {css}&gt;&lt;a href=&#34;{share_url}&#34;&gt;Listen on Spotify&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &#39;&#39;&#39;
+    cell_css = &#39;style=&#34;padding:3px;border-bottom:solid 1px #CCC;border-right:solid 1px #CCC;&#34;&#39;
+    table_css = &#39;style=&#34;width:100%;border:solid 1px #CCC;border-collapse:collapse;margin-bottom:10px;&#34;&#39;
+    
+    rows = []
+
+    # data section:
+    [&#39;name&#39;, &#39;album_image_url_small&#39;, &#39;artist_name&#39;, &#39;album_name&#39;, &#39;share_url&#39;]
+    for track in tracks:
+        rows.append(
+            template.format(
+                css=cell_css,
+                name=track.get(&#39;name&#39;), 
+                image_url=track.get(&#39;album&#39;).get(&#39;image_url_small&#39;),
+                artist_name=track.get(&#39;artist&#39;).get(&#39;name&#39;),
+                album_name=track.get(&#39;album&#39;).get(&#39;name&#39;),
+                share_url=track.get(&#39;share_url&#39;)
+            )
+        )
+    
+    return &#39;&#39;&#39;
+        &lt;table {table_css}&gt;
+            &lt;tr&gt;
+                &lt;th {css}&gt;Name&lt;/th&gt;
+                &lt;th {css}&gt;Image&lt;/th&gt;
+                &lt;th {css}&gt;Artist&lt;/th&gt;
+                &lt;th {css}&gt;Album&lt;/th&gt;
+                &lt;th {css}&gt;More&lt;/th&gt;
+            &lt;/tr&gt;
+            {rows}
+        &lt;/table&gt;
+    &#39;&#39;&#39;.format(css=cell_css, table_css=table_css, rows=&#39;&#39;.join(rows))
+
+
+############################################
+# Some private, helper functions utilities #
+############################################
+def _issue_get_request(url):
+    &#39;&#39;&#39;
+    Private function. Retrieves data from any Spotify endpoint using the authentication key.
+
+    * url (str): [Required] The API Endpoint + query parameters.  
+    
+    Returns whatever Spotify&#39;s API endpoint gives back.
+    &#39;&#39;&#39;
+    token = authentication.get_token(&#39;https://www.apitutor.org/spotify/key&#39;)
+    headers = {
+        &#39;Authorization&#39;: &#39;Bearer &#39; + token
+    }
+    response = requests.get(url, headers=headers, verify=True)
+    return response.json()
+
+def _simplify_tracks(tracks:list):
+    &#39;&#39;&#39;
+    Private function. Simplifies the Spotify track data so that each dictionary only contains
+    a few key features (the original dictionary is quite large).
+    
+    * tracks (list): The original tracks data structure returned from Spotify.   
+
+    Returns a list of simplified tracks.
+    &#39;&#39;&#39;
+    try:
+        tracks[0]
+    except Exception:
+        return tracks
+
+    simplified = []
+    for item in tracks:
+        track = { 
+            &#39;id&#39;: item[&#39;id&#39;], 
+            &#39;name&#39;: item[&#39;name&#39;], 
+            &#39;preview_url&#39;: item[&#39;preview_url&#39;],
+            &#39;share_url&#39;: &#39;https://open.spotify.com/track/&#39; + item[&#39;id&#39;]
+        }
+        try:
+            track[&#39;album&#39;] = {
+                &#39;id&#39;: item[&#39;album&#39;][&#39;id&#39;],
+                &#39;name&#39;: item[&#39;album&#39;][&#39;name&#39;],
+                &#39;image_url&#39;: item[&#39;album&#39;][&#39;images&#39;][0][&#39;url&#39;],
+                &#39;image_url_small&#39;: item[&#39;album&#39;][&#39;images&#39;][-1][&#39;url&#39;],
+                &#39;share_url&#39;: &#39;https://open.spotify.com/album/&#39; + item[&#39;album&#39;][&#39;id&#39;]
+            }
+        except Exception:
+            pass
+        try:
+            artists = item.get(&#39;album&#39;).get(&#39;artists&#39;)
+            artist = artists[0]
+            track[&#39;artist&#39;] = { 
+                &#39;id&#39;: artist[&#39;id&#39;], 
+                &#39;name&#39;: artist[&#39;name&#39;],
+                &#39;share_url&#39;: &#39;https://open.spotify.com/artist/&#39; + item[&#39;album&#39;][&#39;artists&#39;][0][&#39;id&#39;]
+            }
+        except Exception:
+           pass
+        simplified.append(track)
+    return simplified
+
+def _simplify_artists(artists:list):
+    &#39;&#39;&#39;
+    Private function. Simplifies the Spotify artist data so that each dictionary only contains
+    a few key features (the original dictionary is quite large).
+    
+    * artists (list): The original artists data structure returned from Spotify.   
+
+    Returns a list of simplified artists.
+    &#39;&#39;&#39;
+    try:
+        artists[0]
+    except Exception:
+        return artists
+
+    simplified = []
+    for item in artists:
+        artist = { 
+            &#39;id&#39;: item[&#39;id&#39;], 
+            &#39;name&#39;: item[&#39;name&#39;], 
+            &#39;genres&#39;: &#39;, &#39;.join(item[&#39;genres&#39;]),
+            &#39;share_url&#39;: &#39;https://open.spotify.com/artist/&#39; + item[&#39;id&#39;]
+        }
+        try:
+            artist[&#39;image_url&#39;] = item[&#39;images&#39;][0][&#39;url&#39;]
+            artist[&#39;image_url_small&#39;] = item[&#39;images&#39;][-1][&#39;url&#39;]
+        except Exception:
+            pass
+        simplified.append(artist)
+    return simplified
+
+def _simplify_playlists(playlists:list):
+    &#39;&#39;&#39;
+    Private function. Simplifies the Spotify playlist data so that each dictionary only contains
+    a few key features (the original dictionary is quite large).
+    
+    * playlists (list): The original playlist data structure returned from Spotify.   
+
+    Returns a list of simplified playlist entries.
+    &#39;&#39;&#39;
+    try:
+        simplified = []
+        for item in playlists:
+            simplified.append({ 
+                &#39;id&#39;: item[&#39;id&#39;], 
+                &#39;name&#39;: item[&#39;name&#39;], 
+                &#39;owner_display_name&#39;: item[&#39;owner&#39;][&#39;display_name&#39;],
+                &#39;owner_id&#39;: item[&#39;owner&#39;][&#39;id&#39;],
+                &#39;share_url&#39;: &#39;https://open.spotify.com/playlist/&#39; + item[&#39;id&#39;]
+            })
+        return simplified
+    except Exception as e:
+        # give a good error message:
+        error = &#39;The following playlist data structure could not be simplified:\n&#39; + str(playlists)
+        # print(error)
+        raise Exception(error)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="spotify._issue_get_request"><code class="name flex">
+<span>def <span class="ident">_issue_get_request</span></span>(<span>url)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Private function. Retrieves data from any Spotify endpoint using the authentication key.</p>
+<ul>
+<li>url (str): [Required] The API Endpoint + query parameters.
+</li>
+</ul>
+<p>Returns whatever Spotify's API endpoint gives back.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def _issue_get_request(url):
+    &#39;&#39;&#39;
+    Private function. Retrieves data from any Spotify endpoint using the authentication key.
+
+    * url (str): [Required] The API Endpoint + query parameters.  
+    
+    Returns whatever Spotify&#39;s API endpoint gives back.
+    &#39;&#39;&#39;
+    token = authentication.get_token(&#39;https://www.apitutor.org/spotify/key&#39;)
+    headers = {
+        &#39;Authorization&#39;: &#39;Bearer &#39; + token
+    }
+    response = requests.get(url, headers=headers, verify=True)
+    return response.json()</code></pre>
+</details>
+</dd>
+<dt id="spotify._simplify_artists"><code class="name flex">
+<span>def <span class="ident">_simplify_artists</span></span>(<span>artists: list)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Private function. Simplifies the Spotify artist data so that each dictionary only contains
+a few key features (the original dictionary is quite large).</p>
+<ul>
+<li>artists (list): The original artists data structure returned from Spotify.
+</li>
+</ul>
+<p>Returns a list of simplified artists.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def _simplify_artists(artists:list):
+    &#39;&#39;&#39;
+    Private function. Simplifies the Spotify artist data so that each dictionary only contains
+    a few key features (the original dictionary is quite large).
+    
+    * artists (list): The original artists data structure returned from Spotify.   
+
+    Returns a list of simplified artists.
+    &#39;&#39;&#39;
+    try:
+        artists[0]
+    except Exception:
+        return artists
+
+    simplified = []
+    for item in artists:
+        artist = { 
+            &#39;id&#39;: item[&#39;id&#39;], 
+            &#39;name&#39;: item[&#39;name&#39;], 
+            &#39;genres&#39;: &#39;, &#39;.join(item[&#39;genres&#39;]),
+            &#39;share_url&#39;: &#39;https://open.spotify.com/artist/&#39; + item[&#39;id&#39;]
+        }
+        try:
+            artist[&#39;image_url&#39;] = item[&#39;images&#39;][0][&#39;url&#39;]
+            artist[&#39;image_url_small&#39;] = item[&#39;images&#39;][-1][&#39;url&#39;]
+        except Exception:
+            pass
+        simplified.append(artist)
+    return simplified</code></pre>
+</details>
+</dd>
+<dt id="spotify._simplify_playlists"><code class="name flex">
+<span>def <span class="ident">_simplify_playlists</span></span>(<span>playlists: list)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Private function. Simplifies the Spotify playlist data so that each dictionary only contains
+a few key features (the original dictionary is quite large).</p>
+<ul>
+<li>playlists (list): The original playlist data structure returned from Spotify.
+</li>
+</ul>
+<p>Returns a list of simplified playlist entries.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def _simplify_playlists(playlists:list):
+    &#39;&#39;&#39;
+    Private function. Simplifies the Spotify playlist data so that each dictionary only contains
+    a few key features (the original dictionary is quite large).
+    
+    * playlists (list): The original playlist data structure returned from Spotify.   
+
+    Returns a list of simplified playlist entries.
+    &#39;&#39;&#39;
+    try:
+        simplified = []
+        for item in playlists:
+            simplified.append({ 
+                &#39;id&#39;: item[&#39;id&#39;], 
+                &#39;name&#39;: item[&#39;name&#39;], 
+                &#39;owner_display_name&#39;: item[&#39;owner&#39;][&#39;display_name&#39;],
+                &#39;owner_id&#39;: item[&#39;owner&#39;][&#39;id&#39;],
+                &#39;share_url&#39;: &#39;https://open.spotify.com/playlist/&#39; + item[&#39;id&#39;]
+            })
+        return simplified
+    except Exception as e:
+        # give a good error message:
+        error = &#39;The following playlist data structure could not be simplified:\n&#39; + str(playlists)
+        # print(error)
+        raise Exception(error)</code></pre>
+</details>
+</dd>
+<dt id="spotify._simplify_tracks"><code class="name flex">
+<span>def <span class="ident">_simplify_tracks</span></span>(<span>tracks: list)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Private function. Simplifies the Spotify track data so that each dictionary only contains
+a few key features (the original dictionary is quite large).</p>
+<ul>
+<li>tracks (list): The original tracks data structure returned from Spotify.
+</li>
+</ul>
+<p>Returns a list of simplified tracks.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def _simplify_tracks(tracks:list):
+    &#39;&#39;&#39;
+    Private function. Simplifies the Spotify track data so that each dictionary only contains
+    a few key features (the original dictionary is quite large).
+    
+    * tracks (list): The original tracks data structure returned from Spotify.   
+
+    Returns a list of simplified tracks.
+    &#39;&#39;&#39;
+    try:
+        tracks[0]
+    except Exception:
+        return tracks
+
+    simplified = []
+    for item in tracks:
+        track = { 
+            &#39;id&#39;: item[&#39;id&#39;], 
+            &#39;name&#39;: item[&#39;name&#39;], 
+            &#39;preview_url&#39;: item[&#39;preview_url&#39;],
+            &#39;share_url&#39;: &#39;https://open.spotify.com/track/&#39; + item[&#39;id&#39;]
+        }
+        try:
+            track[&#39;album&#39;] = {
+                &#39;id&#39;: item[&#39;album&#39;][&#39;id&#39;],
+                &#39;name&#39;: item[&#39;album&#39;][&#39;name&#39;],
+                &#39;image_url&#39;: item[&#39;album&#39;][&#39;images&#39;][0][&#39;url&#39;],
+                &#39;image_url_small&#39;: item[&#39;album&#39;][&#39;images&#39;][-1][&#39;url&#39;],
+                &#39;share_url&#39;: &#39;https://open.spotify.com/album/&#39; + item[&#39;album&#39;][&#39;id&#39;]
+            }
+        except Exception:
+            pass
+        try:
+            artists = item.get(&#39;album&#39;).get(&#39;artists&#39;)
+            artist = artists[0]
+            track[&#39;artist&#39;] = { 
+                &#39;id&#39;: artist[&#39;id&#39;], 
+                &#39;name&#39;: artist[&#39;name&#39;],
+                &#39;share_url&#39;: &#39;https://open.spotify.com/artist/&#39; + item[&#39;album&#39;][&#39;artists&#39;][0][&#39;id&#39;]
+            }
+        except Exception:
+           pass
+        simplified.append(track)
+    return simplified</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_album_player_html"><code class="name flex">
+<span>def <span class="ident">get_album_player_html</span></span>(<span>album_id: int, width: int = 300, height: int = 380)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Generates an Spotify album player.
+</p>
+<ul>
+<li>album_id (int): [Required] The Spotify album id.
+</li>
+<li>width (int): The width of the player.
+</li>
+<li>height (int): The height of the player.</li>
+</ul>
+<p>Returns a string representation of an HTML iframe corresponding to the album.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_album_player_html(album_id:int, width:int=300, height:int=380):
+    &#39;&#39;&#39;
+    Generates an Spotify album player.  
+
+    * album_id (int): [Required] The Spotify album id.  
+    * width (int): The width of the player.  
+    * height (int): The height of the player.
+
+    Returns a string representation of an HTML iframe corresponding to the album.
+    &#39;&#39;&#39;
+    return &#39;&#39;&#39;
+    &lt;iframe src=&#34;https://open.spotify.com/embed/album/{album_id}&#34; 
+        width=&#34;{width}&#34; height=&#34;{height}&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; 
+        allow=&#34;encrypted-media&#34;&gt;
+    &lt;/iframe&gt;&#39;&#39;&#39;.format(album_id=album_id, width=width, height=height)</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_artists"><code class="name flex">
+<span>def <span class="ident">get_artists</span></span>(<span>search_term: str, simplify: bool = True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Retrieves a list of Spotify artists, given the search term passed in.
+</p>
+<ul>
+<li>search_term (str): [Required] A search term (for an artist), represented as a string.
+</li>
+<li>simplify (bool):
+Indicates whether you want to simplify the data that is returned.
+</li>
+</ul>
+<p>Returns a list of artists.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_artists(search_term:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of Spotify artists, given the search term passed in.  
+
+    * search_term (str): [Required] A search term (for an artist), represented as a string.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of artists.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/search?q=&#39; + search_term + &#39;&amp;type=artist&#39;
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_artists(data[&#39;artists&#39;][&#39;items&#39;])</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_audio_features_by_track"><code class="name flex">
+<span>def <span class="ident">get_audio_features_by_track</span></span>(<span>track_id: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Retrieves Spotify's audio analysis of the track.</p>
+<ul>
+<li>track_id (str): [Required] The id of the Spotify track.
+</li>
+</ul>
+<p>Returns a list of audio features.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_audio_features_by_track(track_id:str):
+    &#39;&#39;&#39;
+    Retrieves Spotify&#39;s audio analysis of the track.
+
+    * track_id (str): [Required] The id of the Spotify track.  
+    
+    Returns a list of audio features.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/audio-features/&#39; + track_id
+    return _issue_get_request(url)</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_formatted_tracklist_table"><code class="name flex">
+<span>def <span class="ident">get_formatted_tracklist_table</span></span>(<span>tracks: list)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Function that builds a string representation of the tracks.</p>
+<ul>
+<li>tracks (list): [Required] List of tracks.
+</li>
+</ul>
+<p>Returns a table as a string (that can subsequently be printed to the screen).</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_formatted_tracklist_table(tracks:list):
+    &#39;&#39;&#39;
+    Function that builds a string representation of the tracks.
+
+    * tracks (list): [Required] List of tracks.  
+
+    Returns a table as a string (that can subsequently be printed to the screen).
+    &#39;&#39;&#39;
+    line_width = 95
+    text = &#39;&#39;
+    template = &#39;{0:2} | {1:&lt;22.22} | {2:&lt;30.30} | {3:&lt;30.30}\n&#39;
+    
+    # header section:
+    text += &#39;-&#39; * line_width + &#39;\n&#39;
+    text += template.format(
+        &#39;&#39;, &#39;Name&#39;, &#39;Artist&#39;, &#39;Album&#39;
+    )
+    text += &#39;-&#39; * line_width + &#39;\n&#39;
+
+    # data section:
+    counter = 1
+    for track in tracks:
+        text += template.format(
+            counter,
+            track.get(&#39;name&#39;), 
+            track.get(&#39;artist&#39;).get(&#39;name&#39;),
+            track.get(&#39;album&#39;).get(&#39;name&#39;)
+        )
+        counter += 1
+    text += &#39;-&#39; * line_width + &#39;\n&#39;
+    return text</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_formatted_tracklist_table_html"><code class="name flex">
+<span>def <span class="ident">get_formatted_tracklist_table_html</span></span>(<span>tracks: list)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Makes a nice formatted HTML table of tracks. Good for writing to an
+HTML file or for sending in an email.</p>
+<ul>
+<li>tracks(list): [Required] A list of tracks.
+</li>
+</ul>
+<p>Returns an HTML table as a string</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_formatted_tracklist_table_html(tracks:list):
+    &#39;&#39;&#39;
+    Makes a nice formatted HTML table of tracks. Good for writing to an 
+    HTML file or for sending in an email.
+
+    * tracks(list): [Required] A list of tracks.  
+
+    Returns an HTML table as a string 
+    &#39;&#39;&#39;
+    if not tracks:
+        print(&#39;A list of tracks is required.&#39;)
+        return
+
+    template = &#39;&#39;&#39;
+        &lt;tr&gt;
+            &lt;td {css}&gt;{name}&lt;/td&gt;
+            &lt;td {css}&gt;&lt;img src=&#34;{image_url}&#34; /&gt;&lt;/td&gt;
+            &lt;td {css}&gt;{artist_name}&lt;/td&gt;
+            &lt;td {css}&gt;{album_name}&lt;/td&gt;
+            &lt;td {css}&gt;&lt;a href=&#34;{share_url}&#34;&gt;Listen on Spotify&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &#39;&#39;&#39;
+    cell_css = &#39;style=&#34;padding:3px;border-bottom:solid 1px #CCC;border-right:solid 1px #CCC;&#34;&#39;
+    table_css = &#39;style=&#34;width:100%;border:solid 1px #CCC;border-collapse:collapse;margin-bottom:10px;&#34;&#39;
+    
+    rows = []
+
+    # data section:
+    [&#39;name&#39;, &#39;album_image_url_small&#39;, &#39;artist_name&#39;, &#39;album_name&#39;, &#39;share_url&#39;]
+    for track in tracks:
+        rows.append(
+            template.format(
+                css=cell_css,
+                name=track.get(&#39;name&#39;), 
+                image_url=track.get(&#39;album&#39;).get(&#39;image_url_small&#39;),
+                artist_name=track.get(&#39;artist&#39;).get(&#39;name&#39;),
+                album_name=track.get(&#39;album&#39;).get(&#39;name&#39;),
+                share_url=track.get(&#39;share_url&#39;)
+            )
+        )
+    
+    return &#39;&#39;&#39;
+        &lt;table {table_css}&gt;
+            &lt;tr&gt;
+                &lt;th {css}&gt;Name&lt;/th&gt;
+                &lt;th {css}&gt;Image&lt;/th&gt;
+                &lt;th {css}&gt;Artist&lt;/th&gt;
+                &lt;th {css}&gt;Album&lt;/th&gt;
+                &lt;th {css}&gt;More&lt;/th&gt;
+            &lt;/tr&gt;
+            {rows}
+        &lt;/table&gt;
+    &#39;&#39;&#39;.format(css=cell_css, table_css=table_css, rows=&#39;&#39;.join(rows))</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_genres"><code class="name flex">
+<span>def <span class="ident">get_genres</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Queries Spotify for a list of available genres.<br>
+Returns a list of strings representing the genres.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_genres():
+    &#39;&#39;&#39;
+    Queries Spotify for a list of available genres.  
+    Returns a list of strings representing the genres.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/recommendations/available-genre-seeds&#39;
+    data = _issue_get_request(url)
+    return data[&#39;genres&#39;]</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_genres_abridged"><code class="name flex">
+<span>def <span class="ident">get_genres_abridged</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a short, hard-coded list of genres (strings). Note that all of the strings in the list must be valid Spotify genreas.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_genres_abridged():
+    &#39;&#39;&#39;
+    Returns a short, hard-coded list of genres (strings). Note that all of the strings in the list must be valid Spotify genreas.
+    &#39;&#39;&#39;
+    return [
+        &#34;alternative&#34;, &#34;ambient&#34;, &#34;blues&#34;, 
+        &#34;chill&#34;, &#34;country&#34;, &#34;dance&#34;, &#34;electronic&#34;, &#34;folk&#34;, 
+        &#34;funk&#34;, &#34;happy&#34;, &#34;hip-hop&#34;, &#34;indie-pop&#34;, &#34;jazz&#34;, &#34;k-pop&#34;, &#34;metal&#34;, 
+        &#34;new-release&#34;, &#34;pop&#34;, &#34;punk&#34;, &#34;reggae&#34;, &#34;rock&#34;,
+        &#34;soul&#34;, &#34;study&#34;, &#34;trance&#34;, &#34;work-out&#34;, &#34;world-music&#34;
+    ]</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_playlist_player_html"><code class="name flex">
+<span>def <span class="ident">get_playlist_player_html</span></span>(<span>playlist_id: int, width: int = 400, height: int = 280)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Generates an Spotify playlist player.
+</p>
+<ul>
+<li>playlist_id (int): [Required] The Spotify playlist id.
+</li>
+<li>width (int): The width of the player.
+</li>
+<li>height (int): The height of the player.</li>
+</ul>
+<p>Returns a string representation of an HTML iframe corresponding to the playlist.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_playlist_player_html(playlist_id:int, width:int=400, height:int=280):
+    &#39;&#39;&#39;
+    Generates an Spotify playlist player.  
+
+    * playlist_id (int): [Required] The Spotify playlist id.  
+    * width (int): The width of the player.  
+    * height (int): The height of the player.
+
+    Returns a string representation of an HTML iframe corresponding to the playlist.
+    &#39;&#39;&#39;
+    return &#39;&#39;&#39;
+    &lt;iframe src=&#34;https://open.spotify.com/embed/playlist/{playlist_id}&#34; 
+        width=&#34;{width}&#34; height=&#34;{height}&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; 
+        allow=&#34;encrypted-media&#34;&gt;
+    &lt;/iframe&gt;&#39;&#39;&#39;.format(playlist_id=playlist_id, width=width, height=height)</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_playlists"><code class="name flex">
+<span>def <span class="ident">get_playlists</span></span>(<span>search_term: str, simplify: bool = True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Retrieves a list of Spotify playlists, given the search term passed in.</p>
+<ul>
+<li>search_term (str): [Required] A search term (for a song), represented as a string.
+</li>
+<li>simplify (bool):
+Indicates whether you want to simplify the data that is returned.
+</li>
+</ul>
+<p>Returns a list of playlists.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_playlists(search_term:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of Spotify playlists, given the search term passed in.
+
+    * search_term (str): [Required] A search term (for a song), represented as a string.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of playlists.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/search?q=&#39; + search_term + &#39;&amp;type=playlist&#39;
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_playlists(data[&#39;playlists&#39;][&#39;items&#39;])</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_playlists_by_user"><code class="name flex">
+<span>def <span class="ident">get_playlists_by_user</span></span>(<span>user_id: str, simplify: bool = True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Retrieves a list of Spotify playlists belonging to a particular user.</p>
+<ul>
+<li>user_id (str): [Required] A valid Spotify user id, represented as a string.
+</li>
+<li>simplify (bool):
+Indicates whether you want to simplify the data that is returned.
+</li>
+</ul>
+<p>Returns a list of playlists belonging to the user.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_playlists_by_user(user_id:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of Spotify playlists belonging to a particular user.
+
+    * user_id (str): [Required] A valid Spotify user id, represented as a string.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of playlists belonging to the user.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/users/&#39; + user_id + &#39;/playlists&#39;
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_playlists(data[&#39;items&#39;])</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_related_artists"><code class="name flex">
+<span>def <span class="ident">get_related_artists</span></span>(<span>artist_id: str, simplify: bool = True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Retrieves a list of artists who are "related" to the artist you specify (according to Spotify).</p>
+<ul>
+<li>artist_id (str): [Required] The Spotify id of the artist, represented as a string.
+</li>
+<li>simplify (bool):
+Indicates whether you want to simplify the data that is returned.
+</li>
+</ul>
+<p>Returns a list of artists.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_related_artists(artist_id:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of artists who are &#34;related&#34; to the artist you specify (according to Spotify).
+
+    * artist_id (str): [Required] The Spotify id of the artist, represented as a string.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of artists.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/artists/&#39; + artist_id + &#39;/related-artists&#39;
+    # print(url)
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_artists(data[&#39;artists&#39;])</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_similar_tracks"><code class="name flex">
+<span>def <span class="ident">get_similar_tracks</span></span>(<span>artist_ids: list = [], track_ids: list = [], genres: list = [], simplify: bool = True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Spotify's way of providing recommendations. One or more params is required:
+artist_ids, track_ids, or genres. Up to 5 seed values may be provided in
+any combination of seed_artists, seed_tracks and seed_genres. In other words:
+len(artist_ids) + len(track_ids) + len(genres) between 1 and 5.
+</p>
+<ul>
+<li>artist_ids (list): A list of artist ids (list of strings).
+<ul>
+<li>Example: <code>[ '06HL4z0CvFAxyc27GXpf02', '3Nrfpe0tUJi4K4DXYWgMUX' ]</code></li>
+</ul>
+</li>
+<li>track_ids (list): A list of track ids <ul>
+<li>Example: <code>[ '5ZBeML7Lf3FMEVviTyvi8l', '29U7stRjqHU6rMiS8BfaI9' ]</code> </li>
+</ul>
+</li>
+<li>genres (genres): A list of genres
+<ul>
+<li>Example: <code>[ 'chill' ]</code></li>
+</ul>
+</li>
+</ul>
+<p>Returns a list of tracks that are similar</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_similar_tracks(artist_ids:list=[], track_ids:list=[], genres:list=[], simplify:bool=True): 
+    &#39;&#39;&#39;
+    Spotify&#39;s way of providing recommendations. One or more params is required: 
+    artist_ids, track_ids, or genres. Up to 5 seed values may be provided in 
+    any combination of seed_artists, seed_tracks and seed_genres. In other words:
+    len(artist_ids) + len(track_ids) + len(genres) between 1 and 5.  
+
+    * artist_ids (list): A list of artist ids (list of strings).  
+        * Example: `[ &#39;06HL4z0CvFAxyc27GXpf02&#39;, &#39;3Nrfpe0tUJi4K4DXYWgMUX&#39; ]`
+    * track_ids (list): A list of track ids 
+        * Example: `[ &#39;5ZBeML7Lf3FMEVviTyvi8l&#39;, &#39;29U7stRjqHU6rMiS8BfaI9&#39; ]` 
+    * genres (genres): A list of genres  
+        * Example: `[ &#39;chill&#39; ]`
+
+    Returns a list of tracks that are similar
+    &#39;&#39;&#39;
+    if not artist_ids and not track_ids and not genres:
+        raise Exception(&#39;Either artist_ids or track_ids or genres required&#39;)
+    
+    # check if seeds &lt;= 5:
+    artist_ids = artist_ids or []
+    track_ids = track_ids or []
+    genres = genres or []
+    if len(artist_ids) + len(track_ids) + len(genres) &gt; 5:
+        error = &#39;You can only have 5 &#34;seed values&#34; in your recommendations query.\n&#39; + \
+            &#39;In other words, (len(artist_ids) + len(track_ids) + len(genres)) must be less than or equal to 5.&#39;
+        raise Exception(error)
+    
+    params = []
+    if artist_ids:
+        params.append(&#39;seed_artists=&#39; + &#39;,&#39;.join(artist_ids))
+    if track_ids:
+        params.append(&#39;seed_tracks=&#39; + &#39;,&#39;.join(track_ids))
+    if genres:
+        params.append(&#39;seed_genres=&#39; + &#39;,&#39;.join(genres))
+    
+    url = &#39;https://api.spotify.com/v1/recommendations?&#39; + &#39;&amp;&#39;.join(params)
+    print(url)
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+
+    return _simplify_tracks(data[&#39;tracks&#39;])</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_top_tracks_by_artist"><code class="name flex">
+<span>def <span class="ident">get_top_tracks_by_artist</span></span>(<span>artist_id: str, simplify: bool = True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Retrieves a list of Spotify "top tracks" by an artist</p>
+<ul>
+<li>artist_id (str): [Required] The Spotify id of the artist.
+</li>
+<li>simplify (bool):
+Indicates whether you want to simplify the data that is returned.
+</li>
+</ul>
+<p>Returns a list of tracks.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_top_tracks_by_artist(artist_id:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of Spotify &#34;top tracks&#34; by an artist
+
+    * artist_id (str): [Required] The Spotify id of the artist.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of tracks.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/artists/&#39; + artist_id + &#39;/top-tracks?country=us&#39;
+    # print(url)
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_tracks(data[&#39;tracks&#39;])</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_track_player_html"><code class="name flex">
+<span>def <span class="ident">get_track_player_html</span></span>(<span>track_id: int)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates the HTML tags for a Spotify player.</p>
+<ul>
+<li>track_id (int): [Required] The id of a track.
+</li>
+</ul>
+<p>Returns an HTML iFrame
+(str) corresponding to a Spotify player for the track.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_track_player_html(track_id:int):
+    &#39;&#39;&#39;
+    Creates the HTML tags for a Spotify player.
+
+    * track_id (int): [Required] The id of a track.  
+    
+    Returns an HTML iFrame  (str) corresponding to a Spotify player for the track. 
+    &#39;&#39;&#39;
+    return &#39;&#39;&#39;
+    &lt;iframe src=&#34;https://open.spotify.com/embed?uri=spotify:track:{track_id}&amp;amp;theme=white&#34; width=&#34;300&#34; height=&#34;80&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34; allow=&#34;encrypted-media&#34; data-testid=&#34;audio-player&#34;&gt;
+    &lt;/iframe&gt;
+    &#39;&#39;&#39;.format(track_id=track_id)</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_tracks"><code class="name flex">
+<span>def <span class="ident">get_tracks</span></span>(<span>search_term: str, simplify: bool = True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Retrieves a list of Spotify tracks, given the search term passed in.</p>
+<ul>
+<li>search_term (str): [Required] A search term (for a song), represented as a string.
+</li>
+<li>simplify (bool):
+Indicates whether you want to simplify the data that is returned.
+</li>
+</ul>
+<p>Returns a list of tracks.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_tracks(search_term:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of Spotify tracks, given the search term passed in.
+
+    * search_term (str): [Required] A search term (for a song), represented as a string.  
+    * simplify (bool):   Indicates whether you want to simplify the data that is returned.  
+    
+    Returns a list of tracks.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/search?q=&#39; + search_term + &#39;&amp;type=track&#39;
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    return _simplify_tracks(data[&#39;tracks&#39;][&#39;items&#39;])</code></pre>
+</details>
+</dd>
+<dt id="spotify.get_tracks_by_playlist"><code class="name flex">
+<span>def <span class="ident">get_tracks_by_playlist</span></span>(<span>playlist_id: str, simplify: bool = True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Retrieves a list of the tracks associated with a playlist_id</p>
+<ul>
+<li>playlist_id (str): [Required] The id of the Spotify playlist.
+</li>
+<li>simplify (bool):
+Whether you want to simplify the data that is returned.
+</li>
+</ul>
+<p>Returns a list of tracks.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_tracks_by_playlist(playlist_id:str, simplify:bool=True):
+    &#39;&#39;&#39;
+    Retrieves a list of the tracks associated with a playlist_id
+
+    * playlist_id (str): [Required] The id of the Spotify playlist.  
+    * simplify (bool):   Whether you want to simplify the data that is returned.  
+    
+    Returns a list of tracks.
+    &#39;&#39;&#39;
+    url = &#39;https://api.spotify.com/v1/playlists/&#39; + playlist_id + &#39;/tracks&#39;
+    # print(url)
+    data = _issue_get_request(url)
+    if not simplify:
+        return data
+    
+    def get_track(item):
+        return item[&#39;track&#39;]
+    tracks = list(map(get_track, data[&#39;items&#39;]))
+    return _simplify_tracks(tracks)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="spotify._issue_get_request" href="#spotify._issue_get_request">_issue_get_request</a></code></li>
+<li><code><a title="spotify._simplify_artists" href="#spotify._simplify_artists">_simplify_artists</a></code></li>
+<li><code><a title="spotify._simplify_playlists" href="#spotify._simplify_playlists">_simplify_playlists</a></code></li>
+<li><code><a title="spotify._simplify_tracks" href="#spotify._simplify_tracks">_simplify_tracks</a></code></li>
+<li><code><a title="spotify.get_album_player_html" href="#spotify.get_album_player_html">get_album_player_html</a></code></li>
+<li><code><a title="spotify.get_artists" href="#spotify.get_artists">get_artists</a></code></li>
+<li><code><a title="spotify.get_audio_features_by_track" href="#spotify.get_audio_features_by_track">get_audio_features_by_track</a></code></li>
+<li><code><a title="spotify.get_formatted_tracklist_table" href="#spotify.get_formatted_tracklist_table">get_formatted_tracklist_table</a></code></li>
+<li><code><a title="spotify.get_formatted_tracklist_table_html" href="#spotify.get_formatted_tracklist_table_html">get_formatted_tracklist_table_html</a></code></li>
+<li><code><a title="spotify.get_genres" href="#spotify.get_genres">get_genres</a></code></li>
+<li><code><a title="spotify.get_genres_abridged" href="#spotify.get_genres_abridged">get_genres_abridged</a></code></li>
+<li><code><a title="spotify.get_playlist_player_html" href="#spotify.get_playlist_player_html">get_playlist_player_html</a></code></li>
+<li><code><a title="spotify.get_playlists" href="#spotify.get_playlists">get_playlists</a></code></li>
+<li><code><a title="spotify.get_playlists_by_user" href="#spotify.get_playlists_by_user">get_playlists_by_user</a></code></li>
+<li><code><a title="spotify.get_related_artists" href="#spotify.get_related_artists">get_related_artists</a></code></li>
+<li><code><a title="spotify.get_similar_tracks" href="#spotify.get_similar_tracks">get_similar_tracks</a></code></li>
+<li><code><a title="spotify.get_top_tracks_by_artist" href="#spotify.get_top_tracks_by_artist">get_top_tracks_by_artist</a></code></li>
+<li><code><a title="spotify.get_track_player_html" href="#spotify.get_track_player_html">get_track_player_html</a></code></li>
+<li><code><a title="spotify.get_tracks" href="#spotify.get_tracks">get_tracks</a></code></li>
+<li><code><a title="spotify.get_tracks_by_playlist" href="#spotify.get_tracks_by_playlist">get_tracks_by_playlist</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
