@@ -13,6 +13,6 @@ The recommendation app has the following features:
   - Retrieves the recommended tracks using the `spotify.get_similar_tracks()` function
   - Prints the retrieved tracks to the screen in coherent format (using a pandas dataframe)
   - Asks the user if they want to email the tracks to someone, and if so, send an email of the list of track recommendations
-  - Uses the `spotify.get_formatted_tracklist_table_html()` function to build a nice tracklist (see the video) that can be emailed
+  - Uses the `spotify.get_formatted_tracklist_table_html()` function to build a well-formatted tracklist that can be emailed
     
 Libraries: pandas, spotify, twilio
